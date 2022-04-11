@@ -560,7 +560,6 @@ footer > div {
     height: 32px;
 
     margin: 40px 0;
-    padding: 10px 20px;
 
     display: flex;
     align-items: center;
@@ -576,7 +575,7 @@ footer > div {
 }
 
 .contact:hover {
-    box-shadow: 0px 0px 25px 0px white;
+    text-decoration: underline;
 }
 
 .contact p {
