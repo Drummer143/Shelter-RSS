@@ -98,10 +98,6 @@ li a {
     color: var(--nav-text-color);
 }
 
-ul:hover li:first-child {
-    border-color: rgba(241, 205, 179, 0);
-}
-
 li:hover {
     border-bottom: 3px solid var(--color-primary);
 }
@@ -271,14 +267,14 @@ li:hover {
 }
 
 .pet {
-    border-radius: 30px;
+    border-radius: 10px;
     padding-bottom: 30px;
 
     background-color: var(--nav-text-color);
 }
 
 .pet img {
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 .pet:nth-child(3) {
@@ -291,6 +287,10 @@ li:hover {
     background-color: #F6F6F6;
 
     cursor: pointer;
+}
+
+.pet:hover button {
+    background-color: var(--color-primary);
 }
 
 .pet p {
@@ -339,8 +339,6 @@ li:hover {
 
 .pet button:focus {
     text-decoration: none;
-
-    background-color: var(--color-primary);
 }
 
 .arrow:hover {
@@ -351,7 +349,7 @@ li:hover {
     box-shadow: 0px 0px 23px -2px rgba(0, 0, 0, 0.2) inset;
 }
 
-.pets > button {
+.pets > a button {
     width: 261px;
     height: 52px;
 
@@ -368,11 +366,11 @@ li:hover {
     background-color: #F1CDB3;
 }
 
-.pets > button:hover {
+.pets a button:hover {
     opacity: 0.9;
 }
 
-.pets > button:focus {
+.pets a button:focus {
     opacity: 0.9;
 
     box-shadow: 0px 0px 23px -2px rgba(0, 0, 0, 0.2) inset;
