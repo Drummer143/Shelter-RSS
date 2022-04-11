@@ -109,7 +109,7 @@ li:hover {
 /* BACKGROUNDS */
 
 .background:first-child {
-    background: url('../../../assets/images/start-screen-gradient-background.png') no-repeat;
+    background: url('../../assets/images/start-screen-gradient-background.png') no-repeat;
     background-size: 100% 908px;
 }
 
@@ -512,7 +512,7 @@ li:hover {
 footer {
     height: 350px;
 
-    background: url('../../../assets/images/footer-background.png') no-repeat;
+    background: url('../../assets/images/footer-background.png') no-repeat;
     background-size: 100% 350px;
 }
 
