@@ -22,7 +22,7 @@ body {
     margin: 0 auto;
 }
 
-button {
+button, a {
     cursor: pointer;
     user-select: none;
 }
@@ -103,7 +103,7 @@ ul:hover li:first-child {
 }
 
 li:hover {
-    border-bottom: 3px solid var(--color-primary) !important;
+    border-bottom: 3px solid var(--color-primary);
 }
 
 /* BACKGROUNDS */
@@ -274,11 +274,23 @@ li:hover {
     border-radius: 30px;
     padding-bottom: 30px;
 
-    background-color: #FAFAFA;
+    background-color: var(--nav-text-color);
+}
+
+.pet img {
+    border-radius: 30px;
 }
 
 .pet:nth-child(3) {
     margin: 0 45px;
+}
+
+.pet:hover {
+    box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.2);
+
+    background-color: #F6F6F6;
+
+    cursor: pointer;
 }
 
 .pet p {
@@ -305,7 +317,7 @@ li:hover {
     font-size: 17px;
     letter-spacing: 0.06em;
 
-    background-color: #FAFAFA;
+    background-color: var(--nav-text-color);
 }
 
 .arrow{
@@ -332,7 +344,7 @@ li:hover {
 }
 
 .arrow:hover {
-    background-color: #FAFAFA;
+    background-color: var(--nav-text-color);
 }
 
 .arrow:focus {
@@ -410,7 +422,7 @@ li:hover {
     margin-top: 26px;
 }
 
-/* DONATION */
+/* ADDITION */
 
 .donation {
     height: 462px;
@@ -478,7 +490,7 @@ li:hover {
     margin: 10px 15px;
 }
 
-.credit-card p {
+.credit-card a {
     display: flex;
     align-items: center;
 
@@ -488,6 +500,11 @@ li:hover {
     letter-spacing: 0.06em;
 
     color: #545454;
+}
+
+.credit-card:hover {
+    box-shadow: 0px 0px 25px 0px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
 }
 
 .legal-information {
@@ -539,13 +556,16 @@ footer > div {
 }
 
 .contact {
-    width: 300px;
+    width: 320px;
     height: 32px;
 
     margin: 40px 0;
+    padding: 10px 20px;
 
     display: flex;
+    align-items: center;
 
+    border-radius: 10px;
     font-family: 'Georgia';
     font-weight: 400;
     font-size: 20px;
@@ -553,6 +573,10 @@ footer > div {
     letter-spacing: 0.06em;
 
     color: #F1CDB3;
+}
+
+.contact:hover {
+    box-shadow: 0px 0px 25px 0px white;
 }
 
 .contact p {
